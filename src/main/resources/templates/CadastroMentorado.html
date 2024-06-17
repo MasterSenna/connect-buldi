@@ -103,7 +103,9 @@
 
 			<div class="pdf"><br>
 				<label>Foto:</label>
-				<input type="file" id="foto" name="foto" accept="image/*">
+				<label for="teste" class="custom-file-upload">Escolher Foto</label>
+
+				<input type="file" id="teste" name="teste" accept="image/*">
 			</div>
 
 			<div class="continue-button">
@@ -139,6 +141,35 @@
     .voltar-topo:hover {
         background-color: #0056b3;
     }
+
+
+        /* Esconde o input original */
+        input[type="file"] {
+            display: none;
+        }
+
+        /* Estilize o label que substituirá o input */
+        .custom-file-upload {
+            display: inline-block;
+            background-color: #6c63ff;
+            color: white;
+            padding: 10px 20px;
+            cursor: pointer;
+            border-radius: 4px;
+            text-decoration: none;
+            font-size: 16px;
+            text-align: center;
+            transition: background-color 0.3s ease;
+        }
+
+        /* Efeito de hover para o label */
+        .custom-file-upload:hover {
+            background-color: #5753d7;
+        }
+
+
+
+
 </style>
 
 <script>

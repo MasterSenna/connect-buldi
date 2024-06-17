@@ -92,6 +92,7 @@ public class MentoradoController {
 		mentoradoService.salvarMentorado(mentorado);
 
 
+
 		User newUser = new User(mentorado.getEmail(), encryptedPassword, UserRole.USER);
 		this.repository.save(newUser);
 

@@ -245,6 +245,32 @@ header img{
 padding: 1000px;
    }
 
+   /* Esconda o input original */
+   input[type="file"] {
+       display: none;
+   }
+
+   /* Estilize o label que substituirá o input */
+   .custom-file-upload {
+       display: inline-block;
+       background-color: #6c63ff;
+       color: white;
+       padding: 10px 20px;
+       cursor: pointer;
+       border-radius: 4px;
+       text-decoration: none;
+       font-size: 16px;
+       text-align: center;
+       transition: background-color 0.3s ease;
+   }
+
+   /* Efeito de hover para o label */
+   .custom-file-upload:hover {
+       background-color: #5753d7;
+   }
+
+
+
 
 }
 
