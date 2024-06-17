@@ -1,0 +1,152 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Perfil Mentorado</title>
+	<link rel="stylesheet" href="../css/perfilMentorado.css">
+	<link rel="icon" href="assets/2.png" type="image/x-icon">
+</head>
+
+<body>
+
+<div class="menu">
+	<button class="btn btn-primary dropbtn">Menu</button>
+	<div class="dropdown-content">
+		<a href="/mentorado/minhasSessoesAtivas">Minhas sessões</a>
+		<a href="/mentorado/encontrarMentor">Encontrar mentor</a>
+		<a href="/index">Sair</a>
+
+	</div>
+</div>
+<div class="card" data-state="#about">
+	<div class="card-header">
+		<div class="card-cover" style="background-image: url('https://images.unsplash.com/photo-1549068106-b024baf5062d?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=934&q=80')">
+		</div>
+		<img class="card-avatar" src="../assets/maria.jpg" alt="avatar" />
+		<h1 class="card-fullname">Maria</h1>
+		<h2 class="card-jobtitle">Santos</h2>
+	</div>
+	<div class="card-main">
+		<div class="card-section is-active" id="about">
+			<div class="card-content">
+				<div class="card-subtitle">Sobre</div>
+				<p class="card-desc">Apaixonado por tecnologia e natureza, estou sempre pronto para embarcar em novas aventuras e aprender algo novo a cada dia.</p>
+			</div>
+
+			<div class="card-social">
+				<!-- Social media icons here -->
+			</div>
+
+			<button class="botao-editar"><a href="editarPerfilMentorado" style="text-decoration: none; color: white;">Editar meu perfil</a></button>
+		</div>
+		<div class="card-section" id="experience">
+			<div class="card-content">
+				<div class="card-subtitle">PRETENSÕES</div>
+				<div class="card-timeline">
+					<div class="card-item" id="frontendItem" data-year="">
+						<div class="card-item-title">
+							Front-end developer <span></span>
+						</div>
+						<div class="card-item-desc">
+							Quero Aprender novas tecnicas de Dev Web.
+						</div>
+					</div>
+					<div class="card-item" id="uiItem" data-year="">
+						<div class="card-item-title">
+							UI developer <span></span>
+						</div>
+						<div class="card-item-desc">
+							Disigner e essencial.
+						</div>
+					</div>
+					<div class="card-item" id="dataScienceItem" data-year="">
+						<div class="card-item-title">
+							Software Enginee<span></span>
+						</div>
+						<div class="card-item-desc">
+							Paixão por engenharia de software.
+						</div>
+					</div>
+					<div class="card-item" id="fullStackItem" data-year="">
+						<div class="card-item-title">
+							Full-Stack Developer <span></span>
+						</div>
+						<div class="card-item-desc">
+							Poder conhecer Front e Back - End.
+						</div>
+						<button onclick="toggleCodeVisibility()" class="botao-check">Gerenciar minhas Pretensões</button>
+					</div>
+
+					<div id="codeContainer" style="display: none;">
+						<input type="checkbox" id="frontendCheckbox" onchange="toggleItemVisibility('frontendItem')">
+						<label for="frontendCheckbox">Front-end developer</label>
+						<input type="checkbox" id="uiCheckbox" onchange="toggleItemVisibility('uiItem')">
+						<label for="uiCheckbox">UI developer</label>
+						<input type="checkbox" id="dataScienceCheckbox" onchange="toggleItemVisibility('dataScienceItem')">
+						<label for="dataScienceCheckbox">Software Enginne</label>
+						<input type="checkbox" id="fullStackCheckbox" onchange="toggleItemVisibility('fullStackItem')">
+						<label for="fullStackCheckbox">Full-Stack Developer</label>
+					</div>
+				</div>
+			</div>
+		</div>
+		<div class="card-section" id="contact">
+			<div class="card-content">
+				<div class="card-subtitle">MENTORIA</div>
+				<div class="card-contact-wrapper">
+					<div class="card-contact">
+						<div class="mentoring-session">
+							<h3 style="font-size: 24px;">Sessões de mentoria:</h3>
+							<p><strong><br><br>Você não possui nenhuma mentoria</strong></p>
+							<p><strong><br><br><br><br><br></strong></p>
+						</div>
+					</div>
+					<a href="/mentorado/encontrarMentor"><button class="contact-me">BUSCAR MENTOR</button></a>
+				</div>
+			</div>
+		</div>
+		<div class="card-buttons">
+			<button data-section="#about" class="is-active">SOBRE</button>
+			<button data-section="#experience">PRETENSÕES</button>
+			<button data-section="#contact">MATCH</button>
+		</div>
+	</div>
+</div>
+
+<script>
+	function toggleCodeVisibility() {
+        var codeContainer = document.getElementById('codeContainer');
+        if (codeContainer.style.display === 'none') {
+            codeContainer.style.display = 'block';
+        } else {
+            codeContainer.style.display = 'none';
+        }
+    }
+
+    function toggleItemVisibility(itemId) {
+        var item = document.getElementById(itemId);
+        if (item.style.display === 'none') {
+            item.style.display = 'block';
+        } else {
+            item.style.display = 'none';
+        }
+    }
+
+    // Load profile data from localStorage
+    window.onload = function () {
+        const fullname = localStorage.getItem('fullname');
+        const jobtitle = localStorage.getItem('jobtitle');
+        const desc = localStorage.getItem('desc');
+
+        if (fullname) document.querySelector('.card-fullname').textContent = fullname;
+        if (jobtitle) document.querySelector('.card-jobtitle').textContent = jobtitle;
+        if (desc) document.querySelector('.card-desc').textContent = desc;
+    }
+</script>
+</body>
+
+<script src="../js/mentoradoEdite.js"></script>
+
+</html>

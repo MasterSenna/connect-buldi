@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Editar Perfil</title>
+    <link rel="stylesheet" href="../css/editarPerfilMentorado.css">
+    <link rel="icon" href="assets/2.png" type="image/x-icon">
+</head>
+
+<body>
+
+<div class="card" data-state="#about">
+    <div class="card-header">
+
+        <div class="edit-profile">
+            <h2 style="margin-left: 175px; margin-bottom: 50px; margin-top:50px">Editar Perfil</h2>
+            <label for="fullnameInput" class="titles">Nome Completo:</label>
+            <br>
+            <input type="text" id="fullnameInput" placeholder="Nome Completo" class="inputs">
+            <br>
+            <label for="jobtitleInput" class="titles">Título do Trabalho:</label>
+            <br>
+            <input type="text" id="jobtitleInput" placeholder="Título do Trabalho" class="inputs">
+            <br>
+            <label for="descInput" class="titles">Descrição:</label>
+            <br>
+            <textarea id="descInput" placeholder="Descrição" class="inputs"></textarea>
+            <br>
+            <button onclick="updateProfile()" class="botao-inputs"><a href="perfilMentorado" style="text-decoration: none; color: white;">Atualizar Perfil</a></button>
+        </div>
+    </div>
+</div>
+
+<script>
+    function updateProfile() {
+        const fullname = document.getElementById('fullnameInput').value;
+        const jobtitle = document.getElementById('jobtitleInput').value;
+        const desc = document.getElementById('descInput').value;
+
+        localStorage.setItem('fullname', fullname);
+        localStorage.setItem('jobtitle', jobtitle);
+        localStorage.setItem('desc', desc);
+
+        alert('Perfil atualizado!');
+    }
+
+    // Load current profile data into the form
+    window.onload = function () {
+        const fullname = localStorage.getItem('fullname');
+        const jobtitle = localStorage.getItem('jobtitle');
+        const desc = localStorage.getItem('desc');
+
+        if (fullname) document.getElementById('fullnameInput').value = fullname;
+        if (jobtitle) document.getElementById('jobtitleInput').value = jobtitle;
+        if (desc) document.getElementById('descInput').value = desc;
+    }
+</script>
+</body>
+
+</html>

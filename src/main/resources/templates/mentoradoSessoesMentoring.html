@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ConnectMentor - Minhas sessões</title>
+
+    <link rel="stylesheet" href="../css/sessaoMentoring.css">
+
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T"
+          crossorigin="anonymous" />
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.2/css/all.css" integrity="sha384-fnmOCqbTlWIlj8LyTjo7mOUStjsKC4pOpQbqyi7RrhN7udi9RwhKkMHpvLbHG9Sr"
+          crossorigin="anonymous">
+</head>
+<a href="/mentor/perfilMentor" class="voltar-topo">
+    <i class="fas fa-arrow-left"></i>
+</a>
+
+<body>
+
+<div class="menu" >
+    <button class="btn btn-primary dropbtn">Menu</button>
+    <div class="dropdown-content">
+        <a href="/mentorado/perfilMentorado">Meu Perfil</a>
+        <a href="/index">Sair</a>
+    </div>
+</div>
+
+
+
+<div class="container">
+    <h1>Minhas Sessões de Mentoria.</h1>
+    <div class="requests-list" id="requestsList">
+        <!-- Aqui serão inseridas as solicitações de sessão de mentoring -->
+    </div>
+</div>
+
+
+
+<script src="../mentoradoSessoesMentoring.js"></script>
+<script src="../main.js"></script>
+
+
+
+
+</body>
+<style>
+.menu {
+position:absolute;
+right: 60px; /* Distância do topo */
+top: 20px; /* Distância da direita */
+z-index: 1000;
+margin: 10px; /* Margem ao redor do menu */
+padding: 15px; /* Espaçamento interno */
+}
+
+
+
+
+
+
+.dropbtn {
+background-color: yellow;
+color: black;
+padding: 12px 50px; /* Ajuste do espaçamento interno */
+font-size: 16px;
+border: none;
+cursor: pointer;
+border-radius: 8px; /* Borda arredondada */
+transition: background-color 0.3s; /* Transição suave para a mudança de cor de fundo */
+}
+
+.dropdown-content {
+display: none;
+position: absolute;
+background-color: #f9f9f9;
+min-width: 100px;
+box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+z-index: 1;
+border-radius: 8px; /* Borda arredondada */
+padding: 10px 27px;
+}
+
+.dropdown-content a {
+color: black;
+padding-top:10px;
+padding-right:8px;
+padding-left: 10px;
+padding-bottom:12px
+text-decoration: none;
+display: block;
+text-decoration:none;
+}
+
+.dropdown-content a:hover {
+background-color: #f1f1f1;
+border-radius: 8px;
+}
+
+.menu:hover .dropdown-content {
+display: block;
+}
+
+</style>
+
+
+
+</html>

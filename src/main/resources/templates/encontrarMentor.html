@@ -1,0 +1,267 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>ConnectMentor - Encontrar Mentor</title>
+
+
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T"
+        crossorigin="anonymous" />
+  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.2/css/all.css" integrity="sha384-fnmOCqbTlWIlj8LyTjo7mOUStjsKC4pOpQbqyi7RrhN7udi9RwhKkMHpvLbHG9Sr"
+        crossorigin="anonymous">
+  <link rel="icon" href="assets/2.png" type="image/x-icon">
+  <link rel='stylesheet' href='https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.css'>
+  <link rel="stylesheet" href="../css/encontrar.css">
+  <link rel="stylesheet" href="../css/Sttyle.css" />
+  <link rel="stylesheet" href="../mobile-style.css">
+
+
+  <!-- Outras tags meta e links... -->
+
+
+
+
+  <!-- https://bytewebster.com/ -->
+  <!-- https://bytewebster.com/ -->
+  <!-- https://bytewebster.com/ -->
+</head>
+<div class="menu">
+  <button class="btn btn-primary dropbtn">Menu</button>
+  <div class="dropdown-content">
+    <a href="/mentorado/minhasSessoesAtivas">Minhas sessões</a>
+    <a href="/index">Sair</a>
+
+  </div>
+</div>
+
+<body>
+
+
+<div class="container-fluid p-0" style="background-color: #222A35;">
+  <nav class="navbar navbar-expand-lg">
+    <a class="navbar-brand" href="/index">
+      <i class="tituloPag" style="color: white;">ConnectMentor</i></a>
+    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false"
+            aria-label="Toggle navigation">
+
+
+<nav class="navbar navbar-expand-lg navbar-dark bg-dark fixed-top" style="display: none;" >
+  <a class="navbar-brand" href="#">Encontrar - Mentor</a>
+  <!-- Botão do menu de hambúrguer -->
+  <button class="navbar-toggler" type="button" id="menu-toggle">
+    <span class="navbar-toggler-icon"></span>
+  </button>
+  <div class="collapse navbar-collapse" id="navbarNav">
+    <ul class="navbar-nav ml-auto">
+      <li class="nav-item">
+        <a class="nav-link" href="#"></a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" href="#"></a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" href="#"></a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" href="#"></a>
+      </li>
+    </ul>
+  </div>
+</nav>
+<div id="sidebar" class="bg-dark" style="display: none;">
+  <ul class="navbar-nav ml-auto">
+    <li class="nav-item">
+      <a class="nav-link" href="#"></a>
+    </li>
+    <li class="nav-item">
+      <a class="nav-link" href="#"></a>
+    </li>
+    <li class="nav-item">
+      <a class="nav-link" href="#"></a>
+    </li>
+    <li class="nav-item">
+      <a class="nav-link" href="#"></a>
+    </li>
+  </ul>
+</div>
+
+
+
+
+<section>
+  <div class="swiper">
+    <div class="swiper-wrapper">
+
+      <div class="swiper-slide swiper-slide--one" data-bio="Sou um entusiasta da tecnologia com vasta experiência em desenvolvimento de software.
+      Estou sempre buscando aprender e compartilhar conhecimento com outros profissionais da área." id="1">
+
+        <span>Full-Stack</span>
+        <div>
+          <h2>Edi Nascimento</h2>
+          <p>
+            <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" class="w-6 h-6">
+              <path stroke-linecap="round" stroke-linejoin="round" d="M21 10.5c0 7.728-9 12.5-9 12.5s-9-4.772-9-12.5a9 9 0 1118 0z" />
+              <path stroke-linecap="round" stroke-linejoin="round" d="M15 10.5a3 3 0 11-6 0 3 3 0 016 0z" />
+            </svg>
+
+            Google
+          </p>
+
+        </div>
+      </div>
+      <div class="swiper-slide swiper-slide--two"  data-bio="Sou um Scrum Master com mais de 7 anos de experiência liderando equipes de desenvolvimento ágil. Minha paixão é garantir que os projetos sejam entregues com alta qualidade e dentro do prazo. Estou sempre disponível para compartilhar meu conhecimento e ajudar a impulsionar sua carreira na área de gerenciamento de projetos." id="2">
+        <span>Software Enginner</span>
+        <div>
+          <h2>Luis Henrique</h2>
+          <p>
+            <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="w-6 h-6">
+              <path stroke-linecap="round" stroke-linejoin="round" d="M15 10.5a3 3 0 11-6 0 3 3 0 016 0z" />
+              <path stroke-linecap="round" stroke-linejoin="round" d="M19.5 10.5c0 7.142-7.5 11.25-7.5 11.25S4.5 17.642 4.5 10.5a7.5 7.5 0 1115 0z" />
+            </svg>
+            Shopee
+          </p>
+        </div>
+      </div>
+
+      <div class="swiper-slide swiper-slide--three" data-bio="Sou um Engenheiro de Dados apaixonado por transformação digital. Com experiência em projetos de big data e machine learning, estou sempre buscando soluções inovadoras para problemas complexos. Estou disponível para orientação e mentoria em projetos de análise de dados e desenvolvimento de pipelines de dados." id="3">
+        <span>Full-Stack</span>
+        <div>
+          <h2>Claúdia Lins</h2>
+          <p>
+            <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="w-6 h-6">
+              <path stroke-linecap="round" stroke-linejoin="round" d="M15 10.5a3 3 0 11-6 0 3 3 0 016 0z" />
+              <path stroke-linecap="round" stroke-linejoin="round" d="M19.5 10.5c0 7.142-7.5 11.25-7.5 11.25S4.5 17.642 4.5 10.5a7.5 7.5 0 1115 0z" />
+            </svg>
+            Facebook
+          </p>
+        </div>
+      </div>
+
+      <div class="swiper-slide swiper-slide--four" data-bio="Sou um desenvolvedor front-end com paixão por criar interfaces de usuário atraentes e funcionais. Com experiência em HTML, CSS e JavaScript, estou sempre explorando novas tecnologias e melhores práticas de design. Estou aqui para ajudá-lo a aprender e aprimorar suas habilidades de desenvolvimento front-end." id="4">
+        <span>Software Enginner</span>
+        <div>
+          <h2>Sara Silva</h2>
+          <p>
+            <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="w-6 h-6">
+              <path stroke-linecap="round" stroke-linejoin="round" d="M15 10.5a3 3 0 11-6 0 3 3 0 016 0z" />
+              <path stroke-linecap="round" stroke-linejoin="round" d="M19.5 10.5c0 7.142-7.5 11.25-7.5 11.25S4.5 17.642 4.5 10.5a7.5 7.5 0 1115 0z" />
+            </svg>
+            Havaianas
+          </p>
+        </div>
+      </div>
+
+      <div class="swiper-slide swiper-slide--five" data-bio="Sou um Product Owner com uma paixão por criar produtos digitais que cativam e encantam os usuários. Com experiência em gestão de projetos e desenvolvimento ágil, estou sempre focado em alcançar os objetivos de negócios e satisfazer as necessidades dos clientes. Estou aqui para ajudá-lo a transformar suas ideias em produtos de sucesso." id="5">
+        <span>Full-Stack</span>
+        <div>
+          <h2>João Cézar</h2>
+          <p>
+
+            <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="w-6 h-6">
+              <path stroke-linecap="round" stroke-linejoin="round" d="M15 10.5a3 3 0 11-6 0 3 3 0 016 0z" />
+              <path stroke-linecap="round" stroke-linejoin="round" d="M19.5 10.5c0 7.142-7.5 11.25-7.5 11.25S4.5 17.642 4.5 10.5a7.5 7.5 0 1115 0z" />
+            </svg>
+            Bradesco
+          </p>
+        </div>
+      </div>
+    </div>
+
+
+
+
+
+
+    <!-- Add Pagination -->
+    <div class="swiper-pagination"></div>
+  </div>
+</section>
+
+
+      <div class="mentor-popup" id="requestsList">
+        <div class="mentor-popup-content">
+          <img id="mentor-image" src="" alt="">
+          <span class="mentor-popup-close">&times;</span>
+          <h2 id="mentor-name"></h2>
+          <p id="mentor-description"></p>
+          <p id="mentor-bio" style="font-height: bold;"></p>
+          <p id="mentor-company" style="overflow:hidden;"></p>
+
+          <div class="mentor-actions">
+            <a href="/mentorado/minhasSessoesAtivas">
+              <button class="match-btn" onclick="solicitarMatch()"><i class="fas fa-heart"></i> SOLICITAR MENTOR</button>
+            </a>
+            <button class="reject-btn"><i class="fas fa-times"></i> CANCELAR</button>
+          </div>
+        </div>
+      </div>
+
+
+<footer>
+  <div class="container-fluid p-0">
+    <div class="row text-left">
+      <div class="col-md-5 col-sm-5">
+        <h4 class="text-light">Sobre Nós</h4>
+        <p class="text-muted">"O aprendizado é a chave para o crescimento, e o crescimento é a porta para um futuro brilhante. Explore, aprenda e alcance o seu potencial ilimitado."</p>
+        <p class="pt-4 text-muted">Copyright ©2019 Todos os direitos reservados | Este modelo é feito por ConnectMentor
+          <span>Grupo Excelente Saber</span>
+        </p>
+      </div>
+      <div class="col-md-5 col-sm-12">
+        <h4 class="text-light">Boletim de Notícias</h4>
+        <p class="text-muted">Stay Updated</p>
+        <form class="form-inline">
+          <div class="col pl-0">
+            <div class="input-group pr-5">
+              <input type="text" class="form-control bg-dark text-white" id="inlineFormInputGroupUsername2" placeholder="Email">
+              <div class="input-group-prepend">
+                <div class="input-group-text">
+                  <i class="fas fa-arrow-right"></i>
+                </div>
+              </div>
+            </div>
+          </div>
+        </form>
+      </div>
+      <div class="col-md-2 col-sm-12">
+        <h4 class="text-light">Siga-nos</h4>
+        <p class="text-muted">Nossas redes sociais</p>
+        <div class="column text-light">
+          <i class="fab fa-facebook-f"></i>
+          <i class="fab fa-instagram"></i>
+          <i class="fab fa-twitter"></i>
+          <i class="fab fa-youtube"></i>
+        </div>
+      </div>
+    </div>
+  </div>
+</footer>
+
+
+
+
+
+<!-- scripts -->
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.bundle.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/Swiper/8.4.5/swiper-bundle.min.js"></script>
+
+<script src="../encontrarMentor.js"></script>
+
+<script>
+
+  function solicitarMatch(){
+      alert("Solicitação enviada!")
+  }
+
+// Código JavaScript para controlar a abertura e o fechamento do menu lateral
+document.getElementById("menu-toggle").addEventListener("click", function() {
+  document.getElementById("sidebar").classList.toggle("active");
+});
+</script>
+<script src="../popup-mentor.js"></script>
+<script src="../delay2.js"></script>
+
+</body>
+</html>

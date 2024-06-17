@@ -1,0 +1,446 @@
+/*https://bytewebster.com/*/
+/*https://bytewebster.com/*/
+/*https://bytewebster.com/*/
+
+@import url("https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;500;600&family=Roboto:wght@300;400;500&display=swap");
+@import url("https://fonts.googleapis.com/css?family=Acme|Lobster|Patua+One|Rubik|Sniglet");
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  scrollbar-width: none;
+  --Sniglet-font: "Sniglet", cursive;
+}
+:root {
+  --Sniglet-font: "Sniglet", cursive;
+  --Rubik: "Rubik", cursive;
+  --Patua: "Patua One", cursive;
+  --Lobster: "lobster", cursive;
+  --light-black: #2e2c2caf;
+  /*
+  --bggradient: linear-gradient(to bottom, #dd2476, #ff512f);
+  */
+  --light-gray: rgba(255, 255, 255, 0.877);
+}
+
+
+
+section {
+  position: relative;
+  width: 100%;
+  min-height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-image: url(../assets/encontre-seu-mentor.png);
+  overflow: hidden;
+}
+
+
+
+.swiper {
+  width: 100%;
+  padding-top: 50px;
+  padding-bottom: 50px;
+}
+
+.swiper-slide {
+  width: 300px;
+  height: 400px;
+  box-shadow: 0 15px 50px rgba(0, 0, 0, 0.2);
+  filter: blur(1px);
+  border-radius: 10px;
+  display: flex;
+  flex-direction: column;
+  justify-content: end;
+  align-items: self-start;
+}
+
+.swiper-slide-active {
+  filter: blur(0px);
+}
+
+.swiper-pagination-bullet,
+.swiper-pagination-bullet-active {
+  background: #fff;
+}
+
+.swiper-slide span {
+  text-transform: uppercase;
+  color: #fff;
+  background: #1b7402;
+  padding: 7px 18px 7px 25px;
+  display: inline-block;
+  border-radius: 0 20px 20px 0px;
+  letter-spacing: 2px;
+  font-size: 0.8rem;
+  font-family: "Open Sans", sans-serif;
+}
+
+.swiper-slide--one span {
+  background: #7f7f62;
+}
+
+.swiper-slide--two span {
+  background: #087ac4;
+}
+
+.swiper-slide--three span {
+  background: #b45205;
+}
+
+.swiper-slide--four span {
+  background: #087ac4;
+}
+
+.swiper-slide h2 {
+  color: #fff;
+  font-family: "Roboto", sans-serif;
+  font-weight: 400;
+  font-size: 1.3rem;
+  line-height: 1.4;
+  margin-bottom: 15px;
+  padding: 25px 45px 0 25px;
+}
+
+.swiper-slide p {
+  color: #fff;
+  font-family: "Roboto", sans-serif;
+  font-weight: 300;
+  display: flex;
+  align-items: center;
+  padding: 0 25px 35px 25px;
+}
+
+.swiper-slide svg {
+  color: #fff;
+  width: 22px;
+  height: 22px;
+  margin-right: 7px;
+}
+
+.swiper-slide--one {
+  background: linear-gradient(to top, #0f2027, #203a4300, #2c536400),
+    url(../assets/edii.png)
+      no-repeat 50% 50% / cover;
+}
+
+.swiper-slide--two {
+  background: linear-gradient(to top, #0f2027, #203a4300, #2c536400),
+    url("../assets/luiz.png")
+      no-repeat 50% 50% / cover;
+}
+
+.swiper-slide--three {
+  background: linear-gradient(to top, #0f2027, #203a4300, #2c536400),
+    url("../assets/mentora.png")
+      no-repeat 50% 50% / cover;
+}
+
+.swiper-slide--four {
+  background: linear-gradient(to top, #0f2027, #203a4300, #2c536400),
+    url("../assets/saraa.png")
+      no-repeat 50% 50% / cover;
+}
+
+.swiper-slide--five {
+  background: linear-gradient(to top, #0f2027, #203a4300, #2c536400),
+    url("../assets/cezar.png")
+      no-repeat 50% 50% / cover;
+}
+
+.swiper-3d .swiper-slide-shadow-left,
+.swiper-3d .swiper-slide-shadow-right {
+  background-image: none;
+}
+
+.nav-item{
+font-family: var(--Sniglet-font);
+}
+
+
+
+footer {
+  background: rgba(0, 0, 0, 0.815);
+  overflow-x: hidden;
+  padding: 14vmin 18vmin;
+}
+
+footer p > span {
+  color: #ff512f;
+}
+
+footer input {
+  border: none !important;
+}
+
+footer input::placeholder {
+  color: white !important;
+}
+
+footer .input-group .input-group-text {
+  background: var(--bggradient);
+  border: none;
+}
+
+footer .column i {
+  color: #dd2476;
+}
+
+/* It is Adjacent sibling combinator */
+
+footer .column i + i {
+  padding: 0 0.5em;
+}
+
+
+.sticky {
+  position: fixed;
+  top: 0;
+  width: 100%;
+  background: rgba(0, 0, 0, 0.815);
+  z-index: 9999;
+  transition: all 1.5s ease;
+}
+
+.tituloPag {
+  font-family: var(--Lobster);
+  font-size: 50px;
+}
+
+/* Custom styles for hamburger menu */
+.navbar-toggler {
+  border: none;
+  background: transparent !important;
+}
+
+.navbar-toggler:focus {
+  outline: none !important;
+}
+
+.navbar-toggler-icon {
+  background-image: url('data:image/svg+xml;charset=utf8,<svg viewBox="0 0 30 30" xmlns="http://www.w3.org/2000/svg"><path stroke="rgba(0, 0, 0, 0.5)" stroke-width="2" stroke-linecap="round" stroke-miterlimit="10" d="M4 7h22M4 15h22M4 23h22"></path></svg>');
+}
+
+.navbar-toggler.collapsed .navbar-toggler-icon {
+  background-image: url('data:image/svg+xml;charset=utf8,<svg viewBox="0 0 30 30" xmlns="http://www.w3.org/2000/svg"><path stroke="rgba(0, 0, 0, 0.5)" stroke-width="2" stroke-linecap="round" stroke-miterlimit="10" d="M2 15h26M2 7h26M2 23h26"></path></svg>');
+}
+
+#sidebar {
+  height: 100%;
+  width: 0;
+  position: fixed;
+  top: 0;
+  right: 0;
+  background-color: #111;
+  overflow-x: hidden;
+  transition: 0.5s;
+  padding-top: 60px;
+}
+
+#sidebar ul {
+  padding: 0;
+}
+
+#sidebar ul li {
+  list-style-type: none;
+  padding: 15px;
+  border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+}
+
+#sidebar ul li a {
+  color: white;
+  text-decoration: none;
+  font-size: 18px;
+  transition: 0.3s;
+}
+
+#sidebar ul li a:hover {
+  color: #ff7f00;
+}
+
+.navbar-toggler {
+  background-color: transparent !important;
+}
+
+
+/* Estilos do Pop-up do Mentor */
+.mentor-popup {
+  display: none; /* Inicia oculto por padrão */
+  position: absolute;
+  z-index: 99999;
+  left: 0;
+  top: -7%;
+  width: 100%;
+  height: 10000%;
+  overflow: auto;
+  background-color: rgba(0, 0, 0, 0.5);
+  scrollbar-width: none;
+  max-height: 1000px;
+  align-items: center;
+
+}
+
+/* Estilos do Pop-up do Mentor */
+.mentor-popup {
+  display: none;
+  position: fixed;
+  z-index: 99999;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  overflow: auto;
+  background-color: rgba(0, 0, 0, 0.5);
+  align-items: center;
+}
+
+.mentor-popup-content {
+  background-color: #fefefe;
+  margin: 10% auto;
+  padding: 20px;
+  border: 1px solid #888;
+  width: 80%;
+  max-width: 850px;
+  border-radius: 10px;
+  position: relative;
+}
+
+.mentor-popup-content img {
+  max-width: 300px;
+  max-height: 200px;
+  display: block;
+  margin: 0 auto 20px;
+  object-fit: cover;
+  border-radius: 50%;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.mentor-popup-close {
+  color: #aaa;
+  position: absolute;
+  top: 10px;
+  right: 10px;
+  font-size: 28px;
+  font-weight: bold;
+}
+
+.mentor-popup-close:hover,
+.mentor-popup-close:focus {
+  color: black;
+  text-decoration: none;
+  cursor: pointer;
+}
+
+#mentor-name {
+  font-size: 40px;
+  font-weight: bold;
+  margin-bottom: 10px;
+  text-align: center;
+}
+
+#mentor-description {
+  font-weight: bold;
+  font-size: 20px;
+  text-align: center;
+  margin-bottom: 10px;
+}
+
+#mentor-company {
+  text-align: center;
+  margin-bottom: 10px;
+}
+
+#mentor-bio {
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+.mentor-actions {
+  text-align: center;
+}
+
+.match-btn, .reject-btn {
+  padding: 10px 20px;
+  margin: 5px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  font-family: var(--Rubik);
+}
+
+.match-btn {
+  background-color: #007bff;
+  color: #fff;
+}
+
+.reject-btn {
+  background-color: #dc3545;
+  color: #fff;
+}
+
+
+#mentor-bio {
+  font-size: 16px;
+  margin-bottom: 10px;
+  margin-left: 2%;
+  text-align: center;
+}
+
+
+.menu {
+  position:absolute;
+  right: 60px; /* Distância do topo */
+  top: 20px; /* Distância da direita */
+  z-index: 1000;
+  margin: 10px; /* Margem ao redor do menu */
+  padding: 15px; /* Espaçamento interno */
+}
+
+
+
+
+
+
+.dropbtn {
+  background-color: yellow;
+  color: black;
+  padding: 12px 50px; /* Ajuste do espaçamento interno */
+  font-size: 16px;
+  border: none;
+  cursor: pointer;
+  border-radius: 8px; /* Borda arredondada */
+  transition: background-color 0.3s; /* Transição suave para a mudança de cor de fundo */
+}
+
+.dropdown-content {
+  display: none;
+  position: absolute;
+  background-color: #f9f9f9;
+  min-width: 100px;
+  box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+  z-index: 1;
+  border-radius: 8px; /* Borda arredondada */
+  padding: 10px 10px;
+}
+
+.dropdown-content a {
+  color: black;
+  padding-top:10px;
+  padding-right:5px;
+  padding-left: 10px;
+  padding-bottom:5px
+  text-decoration: none;
+  display: block;
+  text-decoration:none;
+}
+
+.dropdown-content a:hover {
+  background-color: #f1f1f1;
+  border-radius: 8px;
+}
+
+.menu:hover .dropdown-content {
+  display: block;
+}
