@@ -1,11 +1,4 @@
-<<<<<<< HEAD
-<<<<<<< HEAD
-# connect-buldi
-=======
-# connect-mentor
-Project ConnectMentor
->>>>>>> 7ab0acf (Initial commit)
-=======
+
 # ConnectMentor
 
 ## Authentication API
@@ -32,15 +25,15 @@ The API was developed for my [YouTube Tutorial](https://www.youtube.com/watch?v=
 
 1. Clone the repository:
 
-    ```bash
+   
     git clone https://github.com/devluz2023/connectMentor/
-    ```
+    
 
 2. Install dependencies with Maven:
 
-    ```bash
+    
     mvn install
-    ```
+    
 
 3. Install [PostgresSQL](https://www.postgresql.org/)
 
@@ -48,9 +41,9 @@ The API was developed for my [YouTube Tutorial](https://www.youtube.com/watch?v=
 
 1. Start the application with Maven:
 
-    ```bash
+    
     mvn spring-boot:run
-    ```
+    
 
 2. The API will be accessible at http://localhost:8080
 
@@ -79,4 +72,4 @@ The project utilizes [PostgresSQL](https://www.postgresql.org/) as the database.
 Contributions are welcome! If you find any issues or have suggestions for improvements, please open an issue or submit a pull request to the repository.
 
 When contributing to this project, please follow the existing code style, [commit conventions](https://www.conventionalcommits.org/en/v1.0.0/), and submit your changes in a separate branch.
->>>>>>> acbd3e8 (Projeto atualizado)
+
