@@ -22,7 +22,7 @@ document.addEventListener("DOMContentLoaded", function() {
 
 const mentors = [
   {
-    name: "Edi Nascimento",
+    name: "José Garcia",
     description: "Desenvolvedor Full Stack",
     company: "Sênior",
     bio: "Sou um entusiasta da tecnologia com vasta experiência em desenvolvimento de software. Estou sempre buscando aprender e compartilhar conhecimento com outros profissionais da área.",

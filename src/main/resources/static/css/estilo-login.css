@@ -13,8 +13,11 @@ body {
     height: 100vh;
   
     --Rubik: "Rubik", cursive;
-   background: url('../assets/fundo-login.png') rgba(12, 12, 233, 0.3); /* Substitua pelo caminho da sua imagem */
-  	background-repeat: no-repeat;
+   background: url('../assets/fundo-login.png') rgba(12, 12, 233, 0.3);/* Substitua pelo caminho da sua imagem */
+background-size: cover; /* Ajusta a imagem para cobrir toda a área */
+    background-repeat: no-repeat; /* Impede que a imagem se repita */
+    background-position: center; /* Centraliza a imagem */
+
 
 }
 
@@ -28,9 +31,9 @@ body {
 
 }
 .content {
-    background-color: #fff;
+    background-color: white;
     border-radius: 15px;
-    width: 960px;
+    width: 685px;
     height: 50%;
     justify-content: space-between;
     align-items: center;
@@ -39,11 +42,12 @@ body {
 .content::before {
     content: "";
     position: absolute;
-    background-color: rgb(0, 128, 255);
+    background-color: #222a35;
     width: 40%;
     height: 100%;
-    border-top-left-radius: 15px;
-    border-bottom-left-radius: 15px;
+    border-top-left-radius: 11px;
+    border-bottom-left-radius: 11px;
+
 
 
     left: 0;
@@ -55,10 +59,10 @@ body {
     margin-bottom: 20px; /* Adicione margem na parte inferior para separá-lo dos elementos acima */
 }
 .title-primary {
-    color: #fff;
+    color: white;
 }
 .title-second {
-    color: black;
+    color: white;
     font-size: 40px; /* Ajuste o tamanho da fonte conforme necessário */
     font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
     margin: 0; /* Remova qualquer margem que possa estar causando desalinhamento */
@@ -71,7 +75,7 @@ body {
     line-height: 30px;
 }
 .description-primary {
-    color: #fff;
+    color: white;
 }
 .description-second {
     color: #7f8c8d;
@@ -84,7 +88,7 @@ body {
 .btn {
     border-radius: 15px;
     text-transform: uppercase;
-    color: #fff;
+    color: white;
     font-size: 14px;
     padding: 10px 40px;
     cursor: pointer;
@@ -96,24 +100,25 @@ body {
 }
 .btn-primary {
     background-color: transparent;
-    border: 1px solid #fff;
+    border: 1px solid white;
     transition: background-color .5s;
     padding: 0.2vmin 1vmin;
 }
 .btn-primary:hover {
-    background-color: #fff;
-    color: black;
-    
+    background-color: white;
+    color: white;
+
 }
 .btn-second {
-    background-color:#007ffb;
+    background-color:#006eff;
     border: 0;
     transition: background-color .5s;
+    color: white;
 }
 .btn-second:hover {
-    background-color: #fff;
-    border: 1px solid #007ffb;
-    color: #007ffb
+    background-color: #003983;
+    border: 1px solid #003983;
+    color: white
 }
 .first-content {
     display: flex;

@@ -1,9 +1,17 @@
 const agendaMentorado = [
-    { id: 1, mentorado: 'Disponível', tópico: 'Disponível', data: 'Disponível', hora: 'Disponível', duração: 'Disponível', imagem: '../assets/2.png' },
+    { id: 1, mentorado: 'Disponível', tópico: 'Disponível', data: 'Disponível', hora: 'Disponível', duração: 'Disponível', imagem: '../assets/logo-sessoes-mentoring.png' },
     { id: 2, mentorado: 'Maria Santos', tópico: 'Desenvolmineto FullStack', data: 'Indefinido', hora: 'Indefinido', duração: '30 minutos', imagem: '../assets/maria.jpg' },
-    { id: 3, mentorado: 'Disponível', tópico: 'Disponível', data: 'Disponível', hora: 'Disponível', duração: 'Disponível', imagem: '../assets/2.png' },
-    { id: 4, mentorado: 'Disponível', tópico: 'Disponível', data: 'Disponível', hora: 'Disponível', duração: 'Disponível', imagem: '../assets/2.png' }
+    { id: 3, mentorado: 'Disponível', tópico: 'Disponível', data: 'Disponível', hora: 'Disponível', duração: 'Disponível', imagem: '../assets/logo-sessoes-mentoring.png' },
+    { id: 4, mentorado: 'Disponível', tópico: 'Disponível', data: 'Disponível', hora: 'Disponível', duração: 'Disponível', imagem: '../assets/logo-sessoes-mentoring.png' }
 ];
+
+function openAndRedirect() {
+
+    window.open('https://meet.google.com/tqn-ouoq-jmz', '_blank');
+
+    window.location.href = "/mentor/avaliacao";
+}
+
 
 
 // Função para exibir as solicitações na página
@@ -21,7 +29,7 @@ function renderRequests() {
             <p><strong>Data:</strong> ${request.data}</p>
             <p><strong>Hora:</strong> ${request.hora}</p>
             <p><strong>Duração:</strong> ${request.duração}</p>
-            <button onclick="window.location.href = 'https://meet.google.com/tqn-ouoq-jmz'">Iniciar Sessão</button>
+            <button onclick="openAndRedirect()">Iniciar Sessão</button>
         `;
         requestsList.appendChild(requestCard);
     });

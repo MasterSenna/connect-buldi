@@ -8,7 +8,7 @@
     <link rel="stylesheet" href="../css/style.css">
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.2/css/all.css"
           integrity="sha384-oS3vJWv+0UjzBfQzYUhtDYW+Pj2yciDJxpsK1OYPAYjqT085Qq/1cq5FLXAZQ7Ay" crossorigin="anonymous">
-    <link rel="icon" href="assets/2.png" type="image/x-icon">
+    <link rel="icon" href="../assets/logo-connect1.png" type="image/x-icon">
 
     <title>Cadastro Mentor</title>
 
@@ -95,6 +95,11 @@
                     </div>
                 </div>
 
+                <div class="input-box">
+                    <label for="profissao">Profissão</label>
+                    <input id="profissao" type="text" name="profissao" placeholder="Digite sua profissão:" required>
+                </div>
+
                 <div class="gender-inputs">
                     <div class="gender-title">
                         <h6>Gênero</h6>
@@ -125,8 +130,10 @@
 
                 <div class="pdf"><br>
                     <label for="pdfUpload">Certificado PDF:</label>
-                    <input type="file" id="pdfUpload" name="certificado">
+                    <label for="pdfUpload" class="custom-file-upload">Escolher Certificado</label>
+                    <input type="file" id="pdfUpload" name="certificado" accept="application/pdf">
                 </div>
+            </div>
 
                 <div class="continue-button">
                     <button type="submit">Continuar</button>
@@ -135,6 +142,32 @@
         </form>
     </div>
 </div>
+<style>
+    /* Esconde o input original */
+    input[type="file"] {
+        display: none;
+    }
+
+    /* Estilize o label que substituirá o input */
+    .custom-file-upload {
+        display: inline-block;
+        background-color: #6c63ff;
+        color: white;
+        padding: 10px 20px;
+        cursor: pointer;
+        border-radius: 4px;
+        text-decoration: none;
+        font-size: 16px;
+        text-align: center;
+        transition: background-color 0.3s ease;
+    }
+
+    /* Efeito de hover para o label */
+    .custom-file-upload:hover {
+        background-color: #5753d7;
+    }
+</style>
+
 
 <script>
     function validateCPF() {

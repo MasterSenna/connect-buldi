@@ -69,6 +69,12 @@ public class MentorController {
 		mv.setViewName("CadastroMentor");
 		return mv;
 	}
+	@GetMapping("avaliacao")
+	public ModelAndView avaliacao() {
+		ModelAndView mv = new ModelAndView();
+		mv.setViewName("avaliacaoMentor");
+		return mv;
+	}
 
 	@PostMapping("/inserirMentores")
 	public String salvarMentor(@RequestParam("certificado") MultipartFile certificadoFile,
@@ -93,7 +99,7 @@ public class MentorController {
 		User newUser = new User(email, encryptedPassword, UserRole.ADMIN);
 
 		String savedFileName = fileService.addImage(certificadoFile.getOriginalFilename(), certificadoFile.getBytes(),
-				"C:\\Users\\Felipe Senna\\Documents\\imagensProj");
+				"C:\\Users\\user\\Downloads");
 		mentor.setCertificado(certificadoFile.getBytes());
 		service.salvarMentor(mentor, certificadoFile);
 		this.repository.save(newUser);
@@ -101,12 +107,6 @@ public class MentorController {
 		return "redirect:sucesso";
 	}
 
-	@GetMapping("sobreNos")
-	public ModelAndView sobreNos() {
-		ModelAndView mv = new ModelAndView();
-		mv.setViewName("sobreNos");
-		return mv;
-	}
 
 	@GetMapping("/perfilMentor")
 	public ModelAndView perfilMentor() {
@@ -133,6 +133,14 @@ public class MentorController {
 	public ModelAndView mentor() {
 		ModelAndView mv = new ModelAndView();
 		mv.setViewName("/mentor/index");
+		return mv;
+	}
+
+	@RequestMapping("/")
+	@GetMapping("/sobreNos")
+	public ModelAndView sobreNos(){
+		ModelAndView mv = new ModelAndView();
+		mv.setViewName("sobreNos");
 		return mv;
 	}
 

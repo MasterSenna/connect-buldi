@@ -1,9 +1,17 @@
 const agendaMentorado = [
-    { id: 1, mentor: 'Disponível', tópico: 'Disponível', data: 'Disponível', hora: 'Disponível', duração: 'Disponível', imagem: '../assets/2.png' },
-    { id: 2, mentor: 'Edi Nascimento', tópico: 'Desenvolvedor FullStack (Mentoria Teste)', data: 'Qualquer data (Mentoria Teste)', hora: 'Qualquer horário (Mentoria Teste)', duração: '30 minutos', imagem: '../assets/edii.png' },
-    { id: 3, mentor: 'Disponível', tópico: 'Disponível', data: 'Disponível', hora: 'Disponível', duração: 'Disponível', imagem: '../assets/2.png' },
-    { id: 4, mentor: 'Disponível', tópico: 'Disponível', data: 'Disponível', hora: 'Disponível', duração: 'Disponível', imagem: '../assets/2.png' }
+    { id: 1, mentor: 'Disponível', tópico: 'Disponível', data: 'Disponível', hora: 'Disponível', duração: 'Disponível', imagem: '../assets/logo-sessoes-mentoring.png' },
+    { id: 2, mentor: 'José Garcia', tópico: 'Desenvolvedor FullStack (Mentoria Teste)', data: 'Qualquer data (Mentoria Teste)', hora: 'Qualquer horário (Mentoria Teste)', duração: '30 minutos', imagem: '../assets/edii.png' },
+    { id: 3, mentor: 'Disponível', tópico: 'Disponível', data: 'Disponível', hora: 'Disponível', duração: 'Disponível', imagem: '../assets/logo-sessoes-mentoring.png' },
+    { id: 4, mentor: 'Disponível', tópico: 'Disponível', data: 'Disponível', hora: 'Disponível', duração: 'Disponível', imagem: '../assets/logo-sessoes-mentoring.png' }
 ];
+
+function openAndRedirect() {
+
+    window.open('https://meet.google.com/tqn-ouoq-jmz', '_blank');
+
+    window.location.href = "/mentorado/avaliacao";
+}
+
 
 
 // Função para exibir as solicitações na página
@@ -21,10 +29,13 @@ function renderRequests() {
             <p><strong>Data:</strong> ${request.data}</p>
             <p><strong>Hora:</strong> ${request.hora}</p>
             <p><strong>Duração:</strong> ${request.duração}</p>
-            <button onclick="window.location.href = 'https://meet.google.com/tqn-ouoq-jmz'">Iniciar Sessão</button>
+            <button onclick="openAndRedirect()">Iniciar Sessão</button>
         `;
         requestsList.appendChild(requestCard);
     });
+
+
+
 }
 
 // Função para simular a aceitação da solicitação

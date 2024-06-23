@@ -1,4 +1,5 @@
 @import url("https://fonts.googleapis.com/css?family=DM+Sans:400,500|Jost:400,500,600&display=swap");
+@import url("https://fonts.googleapis.com/css?family=Acme|Lobster|Patua+One|Rubik|Sniglet");
 
 * {
   box-sizing: border-box;
@@ -7,7 +8,7 @@
 body {
   color: #2b2c48;
   font-family: 'Jost', sans-serif;
-  background-image: url('../assets/fundo-perfil-mentorado.png');
+  background-image: url('../assets/fundo-perfil-mentor.png');
   background-repeat: no-repeat;
   background-size: cover;
   background-position: center;
@@ -15,6 +16,18 @@ body {
   display: flex;
   flex-wrap: wrap;
   padding: 20px;
+}
+
+:root {
+  --Sniglet-font: "Sniglet", cursive;
+  --Rubik: "Rubik", cursive;
+  --Patua: "Patua One", cursive;
+  --Lobster: "lobster", cursive;
+  --light-black: #2e2c2caf;
+  /*
+  --bggradient: linear-gradient(to bottom, #dd2476, #ff512f);
+  */
+  --light-gray: rgba(255, 255, 255, 0.877);
 }
 
 .card {
@@ -408,11 +421,12 @@ cursor: pointer;
 
 .menu {
   position:absolute;
-  right: 60px; /* Distância do topo */
+  right: 65px; /* Distância do topo */
   top: 20px; /* Distância da direita */
   z-index: 1000;
   margin: 10px; /* Margem ao redor do menu */
   padding: 15px; /* Espaçamento interno */
+  font-family: var(--Patua);
 }
 
 
@@ -423,12 +437,13 @@ cursor: pointer;
 .dropbtn {
   background-color: yellow;
   color: black;
-  padding: 12px 50px; /* Ajuste do espaçamento interno */
+  padding: 12px 70px; /* Ajuste do espaçamento interno */
   font-size: 16px;
   border: none;
   cursor: pointer;
   border-radius: 8px; /* Borda arredondada */
   transition: background-color 0.3s; /* Transição suave para a mudança de cor de fundo */
+    font-family: var(--Patua);
 }
 
 .dropdown-content {
@@ -439,18 +454,21 @@ cursor: pointer;
   box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
   z-index: 1;
   border-radius: 8px; /* Borda arredondada */
-  padding: 10px 10px;
+  padding: 10px 15px;
+    font-family: var(--Patua);
+
 }
 
 .dropdown-content a {
   color: black;
   padding-top:10px;
-  padding-right:8px;
-  padding-left: 10px;
-  padding-bottom:12px
+  padding-right:18px;
+  padding-left: 15px;
+  padding-bottom:17px
   text-decoration: none;
   display: block;
   text-decoration:none;
+    font-family: var(--Patua);
 }
 
 .dropdown-content a:hover {

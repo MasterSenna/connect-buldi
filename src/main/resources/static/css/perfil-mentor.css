@@ -1,4 +1,5 @@
 @import url("https://fonts.googleapis.com/css?family=DM+Sans:400,500|Jost:400,500,600&display=swap");
+@import url("https://fonts.googleapis.com/css?family=Acme|Lobster|Patua+One|Rubik|Sniglet");
 
 * {
   box-sizing: border-box;
@@ -16,6 +17,18 @@ body {
   flex-wrap: wrap;
   padding: 20px;
 }
+:root {
+  --Sniglet-font: "Sniglet", cursive;
+  --Rubik: "Rubik", cursive;
+  --Patua: "Patua One", cursive;
+  --Lobster: "lobster", cursive;
+  --light-black: #2e2c2caf;
+  /*
+  --bggradient: linear-gradient(to bottom, #dd2476, #ff512f);
+  */
+  --light-gray: rgba(255, 255, 255, 0.877);
+}
+
 
 .card {
   max-width: 500px;
@@ -41,11 +54,11 @@ body {
 }
 
 .card[data-state="contact"] {
-  height: 445px;
+  height: 340px;
 }
 
 .card[data-state="#experience"] {
-  height: 700px;
+  height: 620px;
 }
 
 .card.is-active .card-header {
@@ -234,7 +247,7 @@ body {
   position: relative;
   padding-left: 60px;
   padding-right: 20px;
-  padding-bottom: 30px;
+  padding-bottom: 25px;
   z-index: 1;
 }
 
@@ -261,12 +274,12 @@ body {
 
 .card-item-title {
   font-weight: 500;
-  font-size: 22px;
+  font-size: 19px;
   margin-bottom: 5px;
 }
 
 .card-item-desc {
-  font-size: 20px;
+  font-size: 17px;
   color: #6f6f7b;
   line-height: 1.5;
   font-family: 'DM Sans', sans-serif;
@@ -418,6 +431,7 @@ body {
   z-index: 1000;
   margin: 10px; /* Margem ao redor do menu */
   padding: 15px; /* Espaçamento interno */
+  font-family: var(--Patua);
 }
 
 
@@ -434,6 +448,7 @@ body {
   cursor: pointer;
   border-radius: 8px; /* Borda arredondada */
   transition: background-color 0.3s; /* Transição suave para a mudança de cor de fundo */
+  font-family: var(--Patua);
 }
 
 .dropdown-content {
@@ -445,6 +460,7 @@ body {
   z-index: 1;
   border-radius: 8px; /* Borda arredondada */
   padding: 10px 10px;
+  font-family: var(--Patua);
 }
 
 .dropdown-content a {
@@ -456,6 +472,7 @@ body {
   text-decoration: none;
   display: block;
   text-decoration:none;
+  font-family: var(--Patua);
 }
 
 .dropdown-content a:hover {

@@ -33,7 +33,11 @@ section {
   display: flex;
   justify-content: center;
   align-items: center;
-  background-image: url(../assets/encontre-seu-mentor.png);
+  background-image: url(../assets/fundo-encontrar-mentor.png);
+  background-size: cover; /* Ajusta a imagem para cobrir toda a área */
+      background-repeat: no-repeat; /* Impede que a imagem se repita */
+      background-position: center; /* Centraliza a imagem */
+
   overflow: hidden;
 }
 
@@ -46,7 +50,7 @@ section {
 }
 
 .swiper-slide {
-  width: 300px;
+  width: 230px;
   height: 400px;
   box-shadow: 0 15px 50px rgba(0, 0, 0, 0.2);
   filter: blur(1px);
@@ -391,11 +395,12 @@ footer .column i + i {
 
 .menu {
   position:absolute;
-  right: 60px; /* Distância do topo */
+  right: 90px; /* Distância do topo */
   top: 20px; /* Distância da direita */
   z-index: 1000;
   margin: 10px; /* Margem ao redor do menu */
   padding: 15px; /* Espaçamento interno */
+  font-family: var(--Patua);
 }
 
 
@@ -406,12 +411,13 @@ footer .column i + i {
 .dropbtn {
   background-color: yellow;
   color: black;
-  padding: 12px 50px; /* Ajuste do espaçamento interno */
+  padding: 12px 60px; /* Ajuste do espaçamento interno */
   font-size: 16px;
   border: none;
   cursor: pointer;
   border-radius: 8px; /* Borda arredondada */
   transition: background-color 0.3s; /* Transição suave para a mudança de cor de fundo */
+  font-family: var(--Patua);
 }
 
 .dropdown-content {
@@ -423,17 +429,19 @@ footer .column i + i {
   z-index: 1;
   border-radius: 8px; /* Borda arredondada */
   padding: 10px 10px;
+  font-family: var(--Patua);
 }
 
 .dropdown-content a {
   color: black;
   padding-top:10px;
-  padding-right:5px;
-  padding-left: 10px;
-  padding-bottom:5px
+  padding-right:13px;
+  padding-left: 13px;
+  padding-bottom:10px
   text-decoration: none;
   display: block;
   text-decoration:none;
+  font-family: var(--Patua);
 }
 
 .dropdown-content a:hover {

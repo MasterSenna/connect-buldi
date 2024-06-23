@@ -38,7 +38,7 @@ header img{
 
 .container {
     width: 80%;
-    height: 90vh;
+    height: 94vh;
     display: flex;
     box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.212);
 }
@@ -55,7 +55,7 @@ header img{
 }
 
 .form-image img {
-    width: 50rem;
+    width: 31rem;
     border-radius: 13px;
     box-shadow: 20px 30px 150px black;
 

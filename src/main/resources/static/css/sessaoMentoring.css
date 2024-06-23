@@ -1,16 +1,28 @@
+@import url("https://fonts.googleapis.com/css?family=Acme|Lobster|Patua+One|Rubik|Sniglet");
 body {
-  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif; /* Fonte mais moderna */
+
   margin: 0;
   padding: 0;
   background-image: url("../assets/fundo-sessoes-mentoring.png");
   color: #333; /* Cor do texto principal */
   line-height: 1.6; /* Espaçamento entre linhas */
   transition: background-color 0.3s; /* Adicionando transição suave para a mudança de cor de fundo */
- 
-  background-size: cover; /* Ajusta o tamanho da imagem para cobrir todo o elemento */
-  background-position: center; /* Centraliza a imagem */
-  background-repeat: no-repeat; /* Evita a repetição da imagem */
- 
+ background-size: cover; /* Ajusta a imagem para cobrir toda a área */
+     background-repeat: no-repeat; /* Impede que a imagem se repita */
+     background-position: center; /* Centraliza a imagem */
+
+}
+
+:root {
+  --Sniglet-font: "Sniglet", cursive;
+  --Rubik: "Rubik", cursive;
+  --Patua: "Patua One", cursive;
+  --Lobster: "lobster", cursive;
+  --light-black: #2e2c2caf;
+  /*
+  --bggradient: linear-gradient(to bottom, #dd2476, #ff512f);
+  */
+  --light-gray: rgba(255, 255, 255, 0.877);
 }
 
 
@@ -19,13 +31,14 @@ body {
   flex-wrap: wrap;
   gap: 20px; /* Espaço entre os cards vertical e horizontalmente */
   justify-content: center; /* Alinha os cards centralmente no caso de não preencherem toda a linha */
-  max-width: 1200px;
+  max-width: 1000px;
   margin: 50px auto;
   background-color: #fff;
   background-color: rgb(253, 253, 251); /* Cor branca com 50% de opacidade */
   padding: 20px;
   border-radius: 8px;
   box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif; /* Fonte mais moderna */
  
 }
 
@@ -47,17 +60,18 @@ h1 {
 .request-card {
   background-color: #f9f9f9;
   padding: 8px;
-  margin-bottom: 30px;
+  margin-bottom: 10px;
   border-radius: 6px;
   box-shadow: 0 4px 20px 0 rgba(0,0,0,0.2);
   transition: 0.3s;
-  width: 400px; /* Ajuste a largura conforme necessário */
+  width: 360px; /* Ajuste a largura conforme necessário */
   background-color: white;
   border-radius: 10px;
   overflow: hidden;
   text-align: center;
-  margin-left: 50px; /* Espaçamento lateral */
-  margin-right: 50px; /* Espaçamento lateral */
+  margin-left: 20px; /* Espaçamento lateral */
+  margin-right: 20px; /* Espaçamento lateral */
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif; /* Fonte mais moderna */
  
 }
 
@@ -123,27 +137,24 @@ h1 {
 
     .menu {
       position:absolute;
-      right: 60px; /* Distância do topo */
+      right: 15px; /* Distância do topo */
       top: 20px; /* Distância da direita */
       z-index: 1000;
       margin: 10px; /* Margem ao redor do menu */
       padding: 15px; /* Espaçamento interno */
+
     }
 
-
-
-
-
-
     .dropbtn {
-      background-color: yellow;
+      background-color: #FFDF2B;
       color: black;
-      padding: 12px 50px; /* Ajuste do espaçamento interno */
+      padding: 12px 20px; /* Ajuste do espaçamento interno */
       font-size: 16px;
       border: none;
       cursor: pointer;
       border-radius: 8px; /* Borda arredondada */
       transition: background-color 0.3s; /* Transição suave para a mudança de cor de fundo */
+      font-family: var(--Patua);
     }
 
     .dropdown-content {
@@ -155,17 +166,19 @@ h1 {
       z-index: 1;
       border-radius: 8px; /* Borda arredondada */
       padding: 10px 10px;
+      font-family: var(--Patua);
     }
 
     .dropdown-content a {
       color: black;
       padding-top:10px;
-      padding-right:8px;
+      padding-right:5px;
       padding-left: 10px;
       padding-bottom:12px
       text-decoration: none;
       display: block;
       text-decoration:none;
+      font-family: var(--Patua);
     }
 
     .dropdown-content a:hover {

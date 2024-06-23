@@ -1,4 +1,5 @@
 @import url("https://fonts.googleapis.com/css?family=Acme|Lobster|Patua+One|Rubik|Sniglet");
+
 * {
   box-sizing: border-box;
   transition: 1s;
@@ -15,9 +16,6 @@ section {
   --Patua: "Patua One", cursive;
   --Lobster: "lobster", cursive;
   --light-black: #2e2c2caf;
-  /*
-  --bggradient: linear-gradient(to bottom, #dd2476, #ff512f);
-  */
   --light-gray: rgba(255, 255, 255, 0.877);
 }
 
@@ -25,6 +23,11 @@ header a {
   font-family: var(--Sniglet-font);
   font-size: 0.9em;
   color: whitesmoke;
+  transition: color 0.3s ease;
+}
+
+header a:hover {
+  color: var(--light-black);
 }
 
 .dropdown-content {
@@ -41,6 +44,7 @@ header a {
   padding: 12px 16px;
   text-decoration: none;
   display: block;
+  transition: background-color 0.3s ease;
 }
 
 .dropdown-content a:hover {
@@ -61,10 +65,7 @@ header .nav-item {
 
 header .navbar-brand {
   padding-left: 8rem;
-}
-
-header .nav-link:hover {
-  color: black;
+  transition: padding-left 0.3s ease;
 }
 
 header .row .col-md-7 {
@@ -78,12 +79,17 @@ header .row .col-md-5 {
 
 header .row .col-md-5 img {
   width: 90%;
+  transition: transform 0.3s ease;
+}
+
+header .row .col-md-5 img:hover {
+  transform: scale(1.05);
 }
 
 header {
   background: #ff512f;
-  /* fallback for old browsers */
   background: var(--bggradient);
+  transition: background 0.3s ease;
 }
 
 header .container .col-md-7 {
@@ -108,73 +114,83 @@ header .container .col-md-7 p {
 .primary-btn {
   border-radius: 30px;
   font-weight: bold;
+  transition: background-color 0.3s ease;
 }
+
 .primary-btn a {
   border-radius: 30px;
   font-weight: bold;
   text-decoration: none;
   color: black;
+  transition: color 0.3s ease;
 }
 
-/********** section 1 **************/
+.primary-btn a:hover {
+  color: var(--light-black);
+}
+
+.primary-btn:hover {
+  background-color: #ddd;
+}
 
 .section-1 {
   padding: 20vmin 0vmin;
+  transition: padding 0.3s ease;
 }
 
 .section-1 .row .col-md-6 .pray img {
   opacity: 1;
-  width: 120%;
-  border-radius: 0.2em;
+  width: 100%;
+  height: auto;
+  border-radius: 20px;
+  transition: transform 0.3s ease;
+}
+
+.section-1 .row .col-md-6 .pray img:hover {
+  transform: scale(1.05);
 }
 
 .section-1 .row .col-md-6:last-child {
   position: relative;
   font-size: 22px;
   font-weight: bolder;
+  transition: font-size 0.3s ease;
 }
 
-
-/* Estilos para o primeiro bloco */
-.content-block-1 .panel {
-  position: absolute;
-  top: 7vmin;
-  left: -18vmin;
-  background: white;
-  border-radius: 3px;
-  text-align: left;
-  padding: 13vmin 5vmin 20vmin 10vmin;
-  box-shadow: 0px 25px 42px rgba(0, 0, 0, 0.2);
-  font-family: var(--Rubik);
-  z-index: 1;
-  /* Adicione seus estilos personalizados aqui */
-}
-
-/* Estilos para o segundo bloco */
+.content-block-1 .panel,
 .content-block-2 .panel {
   position: absolute;
   top: 7vmin;
   left: -18vmin;
-  background: rgb(185, 9, 9);
   border-radius: 3px;
   text-align: left;
   padding: 13vmin 5vmin 20vmin 10vmin;
   box-shadow: 0px 25px 42px rgba(0, 0, 0, 0.2);
   font-family: var(--Rubik);
   z-index: 1;
-  /* Adicione seus estilos personalizados aqui */
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
 }
 
-/* E assim por diante para cada bloco */
-
-
-
-.imgMentor{
-  opacity: 1;
-  width: 40%;
-  border-radius: 0.2em;
+.content-block-1 .panel:hover,
+.content-block-2 .panel:hover {
+  transform: translateY(-10px);
+  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.15);
 }
 
+img {
+  border-radius: 20px;
+  transition: transform 0.3s ease;
+}
+
+img:hover {
+  transform: scale(1.05);
+}
+
+.specific-img {
+  width: 5%;
+  height: auto;
+  border-radius: 10px;
+}
 
 .section-1 .row .col-md-6 .panel {
   position: absolute;
@@ -187,20 +203,25 @@ header .container .col-md-7 p {
   box-shadow: 0px 25px 42px rgba(0, 0, 0, 0.2);
   font-family: var(--Rubik);
   z-index: 1;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.section-1 .row .col-md-6 .panel:hover {
+  transform: translateY(-10px);
+  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.15);
 }
 
 .section-1 .row .col-md-6 .panel h1 {
   font-weight: bold;
   padding: 0.1em 0;
   font-size: 1.8em;
+  transition: font-size 0.3s ease;
 }
 
 .section-1 .row .col-md-6 .panel p {
   font-size: 0.9em;
   color: rgba(0, 0, 0, 0.5);
 }
-
-/*  Section 2  */
 
 .cover {
   width: 100%;
@@ -209,6 +230,7 @@ header .container .col-md-7 p {
   background-position: -24rem -19rem;
   background-size: 150%;
   position: relative;
+  transition: background-position 0.3s ease, background-size 0.3s ease;
 }
 
 .cover .overlay {
@@ -225,18 +247,21 @@ header .container .col-md-7 p {
   height: 100%;
   background: rgba(0, 0, 0, 0.7);
   padding-top: 19vmin;
+  transition: background 0.3s ease, padding-top 0.3s ease;
 }
 
 .cover .content > h1 {
   font-family: var(--Patua);
   font-size: 6vmin;
   color: whitesmoke;
+  transition: font-size 0.3s ease;
 }
 
 .cover .content > p {
   font-family: var(--Rubik);
   font-size: 2vmin;
   color: #e5e5e5;
+  transition: font-size 0.3s ease;
 }
 
 .numbers .rect {
@@ -268,17 +293,25 @@ header .container .col-md-7 p {
   padding-top: 15vmin;
   padding-bottom: 0.1em;
   font-family: var(--Lobster);
+  transition: font-size 0.3s ease;
 }
 
 .purchase > p {
   color: var(--light-black);
   font-size: 3vmin;
   padding-bottom: 10vmin;
+  transition: font-size 0.3s ease;
 }
 
 .purchase .cards .card {
   width: 22rem;
   margin: 3vmin 3vmin;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.purchase .cards .card:hover {
+  transform: translateY(-10px);
+  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.15);
 }
 
 .cards div {
@@ -287,9 +320,10 @@ header .container .col-md-7 p {
 }
 
 .cards .title {
-  background: rgba(0, 212, 53, 0.767);
+  background: rgba(244, 240, 3, 0.767);
   padding: 1.4em 2.5em;
   font-size: 2vmin;
+  transition: background 0.3s ease;
 }
 
 .card .card-text {
@@ -306,30 +340,30 @@ header .container .col-md-7 p {
 .card-body .pricing > h1 {
   font-size: 2vmin;
   padding: 1em 0.5em;
+  transition: font-size 0.3s ease;
 }
 
-/* Section 3 */
-
 .section-3 {
-   
   height: 60vmin;
   margin-top: 15vmin;
-  background-color: #d80b49;
-
-  border-radius: 1010px; /* Ajuste o valor conforme necessário para a curvatura desejada */
+  background-color: white;
+  border-radius: 1010px;
+  transition: height 0.3s ease, margin-top 0.3s ease;
 }
 
 .section-3 .col-md-12 > h1 {
   padding: 2em 0 0.5em 0;
-  color: whitesmoke;
+  color: black;
   font-size: 6vmin;
+  transition: font-size 0.3s ease;
 }
 
 .section-3 .col-md-12 > p {
   padding: 0 4em;
   padding-bottom: 2em;
-  color: var(--light-gray);
+  color: var(--black-gray);
   font-size: 3vmin;
+  transition: font-size 0.3s ease;
 }
 
 .section-3 .desktop {
@@ -338,6 +372,12 @@ header .container .col-md-7 p {
   border-radius: 3em;
   padding: 2vmin 4.5vmin;
   margin: 1em;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.section-3 .desktop:hover {
+  transform: translateY(-10px);
+  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.15);
 }
 
 .section-3 .desktop h3 {
@@ -348,20 +388,26 @@ header .container .col-md-7 p {
   font-size: 2vmin;
 }
 
-/* Section Team */
-
 .section-4 .container h1 {
   font-size: 6vmin;
   padding-top: 14vmin;
+  transition: font-size 0.3s ease;
 }
 
 .section-4 .team {
   padding: 10vmin 4vmin;
+  transition: padding 0.3s ease;
 }
 
 .section-4 .card {
   width: 22em;
   margin-top: 10vmin;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.section-4 .card:hover {
+  transform: translateY(-10px);
+  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.15);
 }
 
 .section-4 .card .card-text {
@@ -385,10 +431,11 @@ footer {
   background: rgba(0, 0, 0, 0.815);
   overflow-x: hidden;
   padding: 14vmin 18vmin;
+  transition: background 0.3s ease, padding 0.3s ease;
 }
 
 footer p > span {
-  color: #ff512f;
+  color: #FFDB58;
 }
 
 footer input {
@@ -400,15 +447,15 @@ footer input::placeholder {
 }
 
 footer .input-group .input-group-text {
-  background: var(--bggradient);
+  background: linear-gradient(to right, #FFFF00, #FFD700);
   border: none;
+  transition: background 0.3s ease;
 }
 
 footer .column i {
-  color: #dd2476;
+  color: #FFDB58;
+  transition: color 0.3s ease;
 }
-
-/* It is Adjacent sibling combinator */
 
 footer .column i + i {
   padding: 0 0.5em;
@@ -423,41 +470,43 @@ footer .column i + i {
   transition: all 1.5s ease;
 }
 
-.tituloPag{
+.tituloPag {
   font-family: var(--Lobster);
   font-size: 50px;
+  transition: font-size 0.3s ease;
 }
 
-
-/* Estilo para a seção de herói */
 .hero-section {
   background-image: url('');
   background-size: cover;
   background-position: center;
-  color: #fff; /* Cor do texto no herói */
+  color: #fff;
   text-align: center;
-  padding: 100px 0; /* Espaçamento interno superior e inferior */
+  padding: 100px 0;
 }
 
 .hero-section h1 {
   font-size: 36px;
   font-weight: bold;
+  transition: font-size 0.3s ease;
 }
 
 .hero-section p {
   font-size: 18px;
+  transition: font-size 0.3s ease;
 }
 
-/* Estilo para a seção "Como Funciona" */
 .how-it-works {
-  background-color: #f4f4f4; /* Cor de fundo da seção */
-  padding: 50px 0; /* Espaçamento interno superior e inferior */
+  background-color: #f4f4f4;
+  padding: 50px 0;
+  transition: background-color 0.3s ease, padding 0.3s ease;
 }
 
 .how-it-works h2 {
   font-size: 24px;
   text-align: center;
   margin-bottom: 20px;
+  transition: font-size 0.3s ease;
 }
 
 .explanation {
@@ -468,18 +517,73 @@ footer .column i + i {
 .explanation h3 {
   font-size: 18px;
   font-weight: bold;
+  transition: font-size 0.3s ease;
 }
 
 .explanation p {
   font-size: 16px;
+  transition: font-size 0.3s ease;
 }
 
-.video{
-
-position: absolute;
-top: 0%;
-opacity: 0.9;
-width: 100%;
+.video {
+  position: absolute;
+  top: 0%;
+  opacity: 0.9;
+  width: 100%;
   height: 100%;
   object-fit: cover;
+}
+
+/* Media Queries */
+@media only screen and (max-width: 768px) {
+  header .navbar-brand {
+    padding-left: 1rem;
+  }
+  .section-1 .row .col-md-6 .panel {
+    position: initial;
+    width: initial;
+    height: initial;
+  }
+  .section-2 .cover {
+    background-position: -25vmin -10vmin;
+  }
+  .numbers .rect {
+    width: 10rem;
+    height: 8rem;
+  }
+  .numbers .rect h1 {
+    font-size: 2rem;
+  }
+
+  .section-3 {
+    height: inherit;
+    padding: 10vmin !important;
+  }
+  .section-3 .row h1 {
+    padding: 6vmin 4vmin;
+  }
+  .section-3 .platform .col-md-6 {
+    text-align: center !important;
+  }
+  .section-3 .desktop i {
+    font-size: 8vmin;
+  }
+  .section-4 .carousel-item {
+    padding-left: 0.6rem;
+  }
+  footer .row .col-md-2 {
+    margin-top: 8vmin;
+  }
+}
+
+@media only screen and (max-width: 375px) {
+  .section-4 .card {
+    width: 18em;
+  }
+}
+
+@media only screen and (max-width: 375px) {
+  .section-4 .carousel-inner {
+    margin-left: -4vmin;
+  }
 }

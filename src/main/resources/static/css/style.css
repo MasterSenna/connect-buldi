@@ -12,6 +12,7 @@ body {
     display: flex;
     justify-content: center;
     align-items: center;
+
     background: url('../assets/fundo-cadastro.png') rgba(12, 12, 233, 0.3); /* Substitua pelo caminho da sua imagem */
     background-size: cover;
 

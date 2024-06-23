@@ -65,6 +65,13 @@ public class MentoradoController {
 		mv.setViewName("sucesso");
 		return mv;
 	}
+	@GetMapping("avaliacao")
+	public ModelAndView avaliacao() {
+
+		ModelAndView mv = new ModelAndView();
+		mv.setViewName("avaliacao");
+		return mv;
+	}
 
 	// Setando view no endpoint perfil mentorado;
 	@GetMapping("perfilMentorado")

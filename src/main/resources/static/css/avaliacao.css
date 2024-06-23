@@ -1,0 +1,86 @@
+@import url("https://fonts.googleapis.com/css?family=Acme|Lobster|Patua+One|Rubik|Sniglet");
+
+body {
+    margin: 0;
+    padding: 0;
+    color: #333;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background-image: url(../assets/fundo-avaliacao.png);
+    background-size: cover; /* Ajusta a imagem para cobrir toda a área */
+    background-repeat: no-repeat; /* Impede que a imagem se repita */
+    background-position: center; /* Centraliza a imagem */
+}
+
+.container {
+    background-color: #fff;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    text-align: center;
+}
+
+h1 {
+    font-size: 24px;
+    margin-bottom: 20px;
+}
+
+.star-rating {
+    display: flex;
+    justify-content: center;
+    margin-bottom: 10px;
+}
+
+.star {
+    font-size: 40px;
+    color: #ccc;
+    cursor: pointer;
+    transition: color 0.3s;
+}
+
+.star:hover,
+.star.active {
+    color: #f5b301;
+}
+
+.rating-value {
+    font-size: 18px;
+    margin-top: 10px;
+}
+
+button#submitRating {
+    background-color: yellow;
+    color: black;
+    border: none;
+    padding: 10px 20px;
+    font-size: 16px;
+    border-radius: 8px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+    margin-top: 20px;
+}
+
+button#submitRating:hover {
+    background-color: #0056b3;
+}
+
+.success-message {
+    display: none;
+    background-color: #dff0d8;
+    color: #3c763d;
+    padding: 10px;
+    border-radius: 8px;
+    margin-top: 20px;
+    font-size: 16px;
+}
+
+.success-message.hidden {
+    display: none;
+}
+
+.success-message {
+    display: block;
+}

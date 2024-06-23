@@ -25,7 +25,7 @@ public class MentorService {
 	public void salvarMentor(Mentor mentor, MultipartFile certificadoFile) throws IOException {
 		if (certificadoFile != null && !certificadoFile.isEmpty()) {
 			String fileName = "certificado_" + System.currentTimeMillis() + ".pdf";
-			String filePath = "C:\\Users\\Felipe Senna\\Documents\\imagensProj";
+			String filePath = "C:\\Users\\Felipe Senna\\Downloads\\img-proj";
 			String certificadoPath = fileService.addImage(fileName, certificadoFile.getBytes(), filePath);
 			mentor.setCertificadoPath(certificadoPath);
 		}
